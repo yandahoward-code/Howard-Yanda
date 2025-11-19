@@ -1,0 +1,391 @@
+/*
+Author: Howard Yanda
+Date: October 25, 2025
+File Name: styles.css
+*/
+
+/* --- CSS Reset --- */
+
+
+header, header h1, header a {
+    color: white !important;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #004080;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+
+section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9fbff; 
+  border-radius: 12px;       
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+}
+
+p, li {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: #333;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* --- Header & Navigation --- */
+header {
+  background-color: #0066cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- Hero Section --- */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* --- Buttons --- */
+.button {
+  background-color: #0099ff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #007acc;
+  transform: scale(1.05);
+}
+
+/* --- Image Galleries --- */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.image-gallery img {
+  width: 30%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+/* --- Large Header Images --- */
+.header-images {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+}
+
+.header-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.header-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* --- Team Section --- */
+.team {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.team h2 {
+  margin-bottom: 40px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.team-member {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  color: #0066cc;
+  margin: 10px 0 5px;
+}
+
+.team-member p {
+  font-size: 0.95em;
+  color: #444;
+  margin: 5px 0;
+}
+
+.team-member ul {
+  list-style-type: disc;      
+  padding-left: 20px;         
+  text-align: left;            
+}
+
+.team-member ul li {
+  margin-bottom: 8px;         
+}
+
+
+/* --- Services Sections --- */
+.service-section {
+  text-align: center;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background-color: #f9fbff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.service-section ul {
+  list-style-type: disc;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.article-links li a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.article-links li a:hover {
+  text-decoration: underline;
+}
+
+/* --- About / Contact Sections --- */
+.about-intro, .contact-intro {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* --- Trading Hours / Contact Details --- */
+.contact-details, .trading-hours {
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.contact-details ul, .trading-hours p {
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+/* --- Map --- */
+.map-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.map-container iframe {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #0066cc;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95em;
+  /* margin-top: 40px; */  /* remove this line */
+}
+
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+footer, footer p, footer a {
+    color: white !important;
+}
+
+
+
+
+/* --- Responsive Tweaks --- */
+@media (max-width: 1000px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .header-images {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header-image img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-gallery img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Header with logo on top */
+.site-header {
+  background-color: #0066cc; 
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-top {
+  display: block;
+  margin: 0 auto 15px auto; 
+  height: 80px; 
+  width: auto;
+}
+
+.site-header h1 {
+  margin: 0 0 15px 0; 
+  font-size: 2.5em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00; 
+}
+
+
